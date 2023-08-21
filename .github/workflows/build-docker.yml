@@ -5,7 +5,7 @@ on:
     paths-ignore:
       - "README.md"
     branches:
-      - master
+      - guest_accounts
 
 jobs:
   tests:
