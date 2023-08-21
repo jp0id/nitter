@@ -34,7 +34,7 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: zedeus/nitter:latest,zedeus/nitter:${{ github.sha }}
+          tags: jp0id/nitter:latest,jp0id/nitter:${{ github.sha }}
   build-docker-arm64:
     needs: [tests]
     runs-on: buildjet-2vcpu-ubuntu-2204-arm
@@ -59,4 +59,4 @@ jobs:
           file: ./Dockerfile.arm64
           platforms: linux/arm64
           push: true
-          tags: zedeus/nitter:latest-arm64,zedeus/nitter:${{ github.sha }}-arm64
+          tags: jp0id/nitter:latest-arm64,jp0id/nitter:${{ github.sha }}-arm64
