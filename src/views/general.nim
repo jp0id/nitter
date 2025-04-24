@@ -31,7 +31,6 @@ proc renderNavbar(cfg: Config; req: Request; rss, canonical: string): VNode =
         icon "search", title="Search", href="/search"
         if cfg.enableRss and rss.len > 0:
           icon "rss-feed", title="RSS Feed", href=rss
-        icon "bird", title="Open in Twitter", href=canonical
         icon "info", title="About", href="/about"
         icon "cog", title="Preferences", href=("/settings?referer=" & encodeUrl(path))
 
